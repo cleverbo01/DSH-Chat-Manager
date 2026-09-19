@@ -9,15 +9,41 @@ DSH 自己的会话列表只能**归档**（把对话藏起来），既不能把
 
 ---
 
-## 它解决什么问题
+## 它解决什么问题（省流版）
 
-| 你想做的事 | DSH 自带 | 这个工具 |
-| --- | --- | --- |
-| 把一段对话导成能读的文档 | 只能导出压缩日志 zip | 导出 Markdown（纯交流 / 完整 / 接手包三种粒度） |
-| 回到某次对话之前重新开始 | 做不到 | 「保留到此」就地截断，或「从此分叉」复制一条新会话 |
-| 真正删掉一条记录 | 只能归档，文件还在磁盘上 | 「彻底删除」清掉日志、缓存、注册记录三处 |
-| 把归档的会话放回来 | 没有这个功能 | 一键取消归档 |
-| 在全部历史里找一个词 | 只能搜标题 | 解压全部会话搜正文，点击跳转到那一轮 |
+打开启动界面.bat后，自动进入浏览器新开标签页，就像使用dsh一样，界面如下：
+
+<img width="2475" height="1362" alt="image" src="https://github.com/user-attachments/assets/c7437a44-93d7-4d9f-875e-1de2c9416427" />
+
+——————————————————————————————————
+
+功能如下：基础的增删改查
+
+1.增：可以“使用中、已归档”自由转换，查看并管理全部完整对话
+<img width="705" height="369" alt="image" src="https://github.com/user-attachments/assets/87eccbc3-8af1-4a93-8b6a-4866ced644f9" />
+
+2.删：真实删去某次对话完整数据，并进行风险提醒，还支持自动备份方便误删回溯
+<img width="684" height="561" alt="image" src="https://github.com/user-attachments/assets/bd29d1f1-7763-4804-bc2f-b07dee444081" />
+
+3.改：可以自由选择之后的对话舍弃或者新开分支，而不是官方只能有最后一次对话开分支
+<img width="141" height="153" alt="image" src="https://github.com/user-attachments/assets/42a3da20-9677-4b09-9d49-efda97ae235b" />
+
+4.查：可以跨对话检索内容，
+<img width="546" height="1341" alt="image" src="https://github.com/user-attachments/assets/7c4e4b97-7135-4512-8684-b7331819418f" />
+————————————————————————————————
+
+使用教程
+小功能还是自己探索吧，上手非常快，都是一点就知道作用的功能
+
+比如：
+设置里修改填写目录
+<img width="759" height="486" alt="image" src="https://github.com/user-attachments/assets/09e468df-2f90-4846-be46-0ecfcee33beb" />
+
+检查完整性：
+<img width="407" height="132" alt="image" src="https://github.com/user-attachments/assets/74ef035a-df0a-4e4a-9d73-9835d00fc4e6" />
+
+安全性：
+<img width="825" height="780" alt="image" src="https://github.com/user-attachments/assets/cfaa5733-bf08-4bb6-9b3a-b6404e3ae91c" />
 
 ---
 
@@ -43,6 +69,7 @@ DSH 自己的会话列表只能**归档**（把对话藏起来），既不能把
 **归档 / 取消归档 / 彻底删除** —— 归档是隐藏（DSH 界面里不再显示）；彻底删除会清掉日志目录、界面缓存、工作区分组与归档名单里的记录，删除前自动整份备份。
 
 **自定义导出目录** —— 导出位置可配置，默认在项目内的 `data/exports`。
+
 
 ---
 
@@ -182,6 +209,14 @@ DSH 的会话日志是**追加写、永不重写**的事件流，事件之间用
 - 备份会随操作次数累积（都放在 `~/.dsh/backups/`），确认不需要后自行清理。
 - 跨会话检索是线性扫描（先做便宜的字符串过滤、只解析命中行）。18 个会话约 1.5 秒；会话数量很大时会更慢。
 
+---
+
+## 贡献与致谢
+
+
+
+本项目在开发过程中使用了 **DeepSeek Harness** 进行 AI 辅助开发
+并得到了 [Linux.Do](https://linux.do/) 社区的技术讨论与支持。
 ---
 
 ## 许可
