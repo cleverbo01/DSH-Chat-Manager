@@ -1,0 +1,37 @@
+{
+  "name": "dsh-session-manager",
+  "version": "1.0.0",
+  "description": "本地界面工具：检索、导出、回溯、归档与彻底删除 DSH（DeepSeek Harness）的聊天记录",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "open": "node server.mjs --open",
+    "cli": "node cli.mjs",
+    "demo": "node tools/make-demo-data.mjs ./demo-home"
+  },
+  "bin": {
+    "dsh-sessions": "cli.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "session",
+    "chat-history",
+    "zstd",
+    "local-first"
+  ],
+  "files": [
+    "server.mjs",
+    "cli.mjs",
+    "lib/",
+    "public/",
+    "tools/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ]
+}

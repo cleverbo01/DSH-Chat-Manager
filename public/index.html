@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>历史对话管理</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <span class="brand-text">历史对话管理</span>
+  </div>
+  <div class="status" id="status">
+    <span class="dot dot-idle"></span><span id="status-text">正在读取…</span>
+  </div>
+  <div class="topbar-actions">
+    <button class="btn btn-ghost" id="btn-exports">导出目录</button>
+    <button class="btn btn-ghost" id="btn-settings">设置</button>
+    <button class="btn btn-ghost" id="btn-refresh">刷新</button>
+  </div>
+</header>
+
+<main class="layout">
+
+  <aside class="pane-list">
+    <div class="list-tools">
+      <input class="search" id="q" type="search" placeholder="搜索聊天记录（所有会话一起搜）">
+      <label class="scope-row">
+        <input type="checkbox" id="scope">
+        <span>连工具记录一起搜</span>
+      </label>
+      <div class="tabs" id="tabs">
+        <button class="tab is-on" data-filter="active">使用中</button>
+        <button class="tab" data-filter="archived">已归档</button>
+        <button class="tab" data-filter="all">全部</button>
+      </div>
+    </div>
+    <div class="list-meta" id="list-meta"></div>
+    <ul class="session-list" id="session-list"></ul>
+  </aside>
+
+  <section class="pane-detail" id="detail">
+    <div class="empty">
+      <div class="empty-title">从左边的卷宗里挑一条</div>
+      <p>这里会显示它的每一轮对话。你可以导出、回溯，或者把它归档、删掉。</p>
+    </div>
+  </section>
+
+</main>
+
+<div class="toast-wrap" id="toast-wrap"></div>
+
+<dialog class="modal" id="modal">
+  <form method="dialog" class="modal-inner">
+    <h3 class="modal-title" id="modal-title">确认</h3>
+    <div class="modal-body" id="modal-body"></div>
+    <label class="force-row" id="force-row" hidden>
+      <input type="checkbox" id="force-check">
+      <span>我知道风险，强制执行（DSH 运行中改这份名单可能被它覆盖）</span>
+    </label>
+    <div class="modal-actions">
+      <button value="cancel" class="btn btn-ghost" id="modal-cancel">取消</button>
+      <button value="ok" class="btn btn-solid" id="modal-ok">确定</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+node_modules/
+data/exports/
+data/settings.json
+
+# 演示数据（由 tools/make-demo-data.mjs 生成）
+demo-home/
+demo-dsh-home/
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 日志与临时产物
+*.log
+*.tmp
+*.prev

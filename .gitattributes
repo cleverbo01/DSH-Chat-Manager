@@ -1,0 +1,15 @@
+# 统一行尾，避免在 Windows 上检出后 start.sh 变成 CRLF 而无法执行
+* text=auto eol=lf
+
+# Windows 脚本保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# shell 脚本必须是 LF
+*.sh text eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.zip binary
+*.zstd binary
