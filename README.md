@@ -229,7 +229,8 @@ DSH 的会话日志是**追加写、永不重写**的事件流，事件之间用
 
 
 
-本项目在开发过程中使用了 **DeepSeek Harness** 进行 AI 辅助开发
+本项目在开发过程中使用了 **DeepSeek Harness** 进行 AI 辅助开发。
+
 并得到了 [Linux.Do](https://linux.do/) 社区的技术讨论与支持。
 ---
 
