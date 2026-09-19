@@ -20,16 +20,24 @@ DSH 自己的会话列表只能**归档**（把对话藏起来），既不能把
 功能如下：基础的增删改查
 
 1.增：可以“使用中、已归档”自由转换，查看并管理全部完整对话
+
 <img width="705" height="369" alt="image" src="https://github.com/user-attachments/assets/87eccbc3-8af1-4a93-8b6a-4866ced644f9" />
 
+
 2.删：真实删去某次对话完整数据，并进行风险提醒，还支持自动备份方便误删回溯
+
 <img width="684" height="561" alt="image" src="https://github.com/user-attachments/assets/bd29d1f1-7763-4804-bc2f-b07dee444081" />
 
+
 3.改：可以自由选择之后的对话舍弃或者新开分支，而不是官方只能有最后一次对话开分支
+
 <img width="141" height="153" alt="image" src="https://github.com/user-attachments/assets/42a3da20-9677-4b09-9d49-efda97ae235b" />
 
+
 4.查：可以跨对话检索内容，
+
 <img width="546" height="1341" alt="image" src="https://github.com/user-attachments/assets/7c4e4b97-7135-4512-8684-b7331819418f" />
+
 ————————————————————————————————
 
 使用教程
@@ -37,13 +45,19 @@ DSH 自己的会话列表只能**归档**（把对话藏起来），既不能把
 
 比如：
 设置里修改填写目录
+
 <img width="759" height="486" alt="image" src="https://github.com/user-attachments/assets/09e468df-2f90-4846-be46-0ecfcee33beb" />
 
+
 检查完整性：
+
 <img width="407" height="132" alt="image" src="https://github.com/user-attachments/assets/74ef035a-df0a-4e4a-9d73-9835d00fc4e6" />
 
+
 安全性：
+
 <img width="825" height="780" alt="image" src="https://github.com/user-attachments/assets/cfaa5733-bf08-4bb6-9b3a-b6404e3ae91c" />
+
 
 ---
 
